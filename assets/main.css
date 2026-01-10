@@ -46,6 +46,11 @@ body {
 .hero-icons a:hover {
   border: 1px solid white;
 }
+@media screen and (max-width: 768px) {
+  .hero .hero-content h1 {
+    font-size: 2.25rem;
+  }
+}
 /* about section styles */
 .about {
   padding: 6rem 0;
