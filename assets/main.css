@@ -1,0 +1,13 @@
+:root {
+  --primary_color: rgb(255, 70, 135);
+  --main_font: "Open Sans", sans-serif;
+}
+
+body{
+    font-family: var(--main_font);
+}
+
+/* navbar styles */
+.nav-item .nav-link.active {
+  color: var(--primary_color);
+}
