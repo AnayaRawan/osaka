@@ -1,6 +1,9 @@
 :root {
-  --primary_color: rgb(255, 70, 135);
+  --primary_color: #ff206e;
   --main_font: "Open Sans", sans-serif;
+}
+.pink__text {
+  color: var(--primary_color);
 }
 
 body {
@@ -17,4 +20,27 @@ body {
 }
 .nav-item .nav-link.active {
   color: var(--primary_color);
+}
+
+/* hero section styles */
+.hero {
+  background-image: url("./images/hero_img.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.hero .hero-content h1 {
+  font-weight: 800;
+  font-size: 3rem;
+}
+.hero-icons{
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+}
+.hero-icons a {
+  transition: 1s cubic-bezier(0.23, 1, 0.32, 1);
+  border: 1px solid rgb(34, 34, 34);
+}
+.hero-icons a:hover {
+  border: 1px solid white;
 }
