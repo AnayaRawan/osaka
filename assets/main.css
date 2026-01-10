@@ -11,7 +11,25 @@ body {
   background-image: url("./images/light_dot.jpg");
   background-attachment: fixed;
 }
-
+/* Section Title and text Styles */
+.section-title h2 {
+  font-weight: 800;
+  font-size: 5rem;
+  color: #f1f1f1;
+  z-index: 0;
+  letter-spacing: 3px;
+}
+.section-title h3 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: 3px;
+  z-index: 1;
+}
+.section-text p {
+  font-size: 0.875rem;
+  margin-bottom: 4rem;
+  color: #212529;
+}
 /* navbar styles */
 .navbar .navbar-brand {
   letter-spacing: 2px;
@@ -55,22 +73,83 @@ body {
 .about {
   padding: 6rem 0;
 }
-.about-title h2 {
-  font-weight: 800;
-  font-size: 5rem;
-  color: #f1f1f1;
-  z-index: -1;
-  letter-spacing: 3px;
-}
-.about-title h3 {
-  font-size: 2.5rem;
-  font-weight: 800;
-  letter-spacing: 3px;
-}
-.about-title-text p {
-  font-size: 0.875rem;
-  margin-bottom: 4rem;
-}
 .about .about-image {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+/* skills section styles */
+.skills {
+  padding: 6rem 0;
+  background-color: black;
+  color: white;
+}
+.skills h2 {
+  color: #222;
+}
+.skills .section-text p {
+  color: #aaa;
+}
+.skill-circle {
+  position: relative;
+  width: 175px;
+  height: 175px;
+  margin: auto;
+}
+
+svg {
+  transform: rotate(-90deg);
+  /* SVG = إطار الدائرة */
+}
+
+circle {
+  fill: none;
+  stroke-width: 12;
+  stroke-linecap: round;
+}
+
+.bg {
+  stroke: #222;
+}
+
+.progress {
+  stroke: #ff2b7a;
+  /* ليش 471 ؟ 
+  الدائرة الي ضفناها قطرها 87.5، ولما نحسب محيطها بطلع تقريبا 471
+  فاحنا بدنا نعرف طول الاطار الي رح نحتاج نلونه */
+  stroke-dasharray: 471; /* طول الاطار الكلي الاسود*/
+  stroke-dashoffset: 471; /* طول الاطار الي رح يظل اسود في البداية وتتغير قيمته حسب النسبة ويتلون*/
+  animation: fill 1.8s ease forwards;
+}
+
+/* النسب */
+.p93 {
+  stroke-dashoffset: calc(471 - (471 * 93) / 100);
+}
+.p88 {
+  stroke-dashoffset: calc(471 - (471 * 88) / 100);
+}
+.p95 {
+  stroke-dashoffset: calc(471 - (471 * 95) / 100);
+}
+.p89 {
+  stroke-dashoffset: calc(471 - (471 * 89) / 100);
+}
+
+.skill-text {
+  inset: 0;
+  /* inset: 0; means the element will be positioned absolutely within its container
+  instead of using top=0, right=0, bottom=0, and left =0  separately. */
+}
+
+.skill-text h6 {
+  font-size: 14px;
+}
+
+.skill-text span {
+  font-size: 24px;
+}
+
+@keyframes fill {
+  from {
+    stroke-dashoffset: 471;
+  }
 }
