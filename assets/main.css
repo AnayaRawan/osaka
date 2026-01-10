@@ -8,6 +8,8 @@
 
 body {
   font-family: var(--main_font);
+  background-image: url("./images/light_dot.jpg");
+  background-attachment: fixed;
 }
 
 /* navbar styles */
@@ -32,10 +34,10 @@ body {
   font-weight: 800;
   font-size: 3rem;
 }
-.hero-icons{
-    bottom: 1rem;
-    left: 1rem;
-    right: 1rem;
+.hero-icons {
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
 }
 .hero-icons a {
   transition: 1s cubic-bezier(0.23, 1, 0.32, 1);
@@ -43,4 +45,27 @@ body {
 }
 .hero-icons a:hover {
   border: 1px solid white;
+}
+/* about section styles */
+.about {
+  padding: 6rem 0;
+}
+.about-title h2 {
+  font-weight: 800;
+  font-size: 5rem;
+  color: #f1f1f1;
+  z-index: -1;
+  letter-spacing: 3px;
+}
+.about-title h3 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+.about-title-text p {
+  font-size: 0.875rem;
+  margin-bottom: 4rem;
+}
+.about .about-image {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
 }
