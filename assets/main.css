@@ -3,11 +3,18 @@
   --main_font: "Open Sans", sans-serif;
 }
 
-body{
-    font-family: var(--main_font);
+body {
+  font-family: var(--main_font);
 }
 
 /* navbar styles */
+.navbar .navbar-brand {
+  letter-spacing: 2px;
+}
+.nav-item .nav-link {
+  transition: all 0.35s ease-in-out;
+  font-size: 14px;
+}
 .nav-item .nav-link.active {
   color: var(--primary_color);
 }
