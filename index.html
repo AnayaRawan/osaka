@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Osaka</title>
-    <link rel="icon" type="image/x-icon" href="./assets/images/tabIcon.ico">
+    <link rel="icon" type="image/x-icon" href="./assets/images/public/tabIcon.ico">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,7 +44,7 @@
                         <a class="nav-link text-uppercase text-white" href="#">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-uppercase text-white" href="#">Portfolio</a>
+                        <a class="nav-link text-uppercase text-white" href="#portfolio">Portfolio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-uppercase text-white" href="#">Price</a>
@@ -97,20 +97,18 @@
         </section>
 
         <section class="about" id="about">
+            <div class="section-title d-flex flex-column align-items-center justify-content-center">
+                <h2 class="text-uppercase position-absolute">About</h2>
+                <h3 class="text-uppercase mt-1">About</h3>
+            </div>
+            <div class="section-text text-center pt-3">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
-                        <div class="section-title d-flex flex-column align-items-center justify-content-center">
-                            <h2 class="text-uppercase position-absolute">About</h2>
-                            <h3 class="text-uppercase mt-1">About</h3>
-                        </div>
-                        <div class="section-text text-center pt-3">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        </div>
-                    </div>
                     <div class="col-md-4">
                         <div class="about-image">
-                            <img src="./assets/images/me.jpg" alt="me" class="mx-auto img-fluid">
+                            <img src="./assets/images/about/me.jpg" alt="me" class="mx-auto img-fluid">
                         </div>
                     </div>
                     <div class="col-md-7 offset-md-1">
@@ -135,25 +133,24 @@
             </div>
         </section>
 
-        <section class="skills">
+        <section class="skills py-5">
+            <div class="section-title d-flex flex-column align-items-center justify-content-center">
+                <h2 class="text-uppercase position-absolute">My Skill</h2>
+                <h3 class="text-uppercase mt-1">My Skill</h3>
+            </div>
+            <div class="section-text text-center pt-3">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
-                        <div class="section-title d-flex flex-column align-items-center justify-content-center">
-                            <h2 class="text-uppercase position-absolute">My Skill</h2>
-                            <h3 class="text-uppercase mt-1">My Skill</h3>
-                        </div>
-                        <div class="section-text text-center pt-3">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        </div>
-                    </div>
                     <div class="col-md-3">
                         <div class="skill-circle">
                             <svg width="175" height="175">
                                 <circle class="bg" cx="87.5" cy="87.5" r="75"></circle>
                                 <circle class="progress p93" cx="87.5" cy="87.5" r="75"></circle>
                             </svg>
-                            <div class="skill-text position-absolute d-flex flex-column justify-content-center align-items-center">
+                            <div
+                                class="skill-text position-absolute d-flex flex-column justify-content-center align-items-center">
                                 <h6 class="text-uppercase">HTML / CSS </h6>
                                 <span class="fw-bold">93%</span>
                             </div>
@@ -165,7 +162,8 @@
                                 <circle class="bg" cx="87.5" cy="87.5" r="75"></circle>
                                 <circle class="progress p88" cx="87.5" cy="87.5" r="75"></circle>
                             </svg>
-                            <div class="skill-text position-absolute d-flex flex-column justify-content-center align-items-center">
+                            <div
+                                class="skill-text position-absolute d-flex flex-column justify-content-center align-items-center">
                                 <h6 class="text-uppercase">JavaScript</h6>
                                 <span class="fw-bold">88%</span>
                             </div>
@@ -177,7 +175,8 @@
                                 <circle class="bg" cx="87.5" cy="87.5" r="75"></circle>
                                 <circle class="progress p95" cx="87.5" cy="87.5" r="75"></circle>
                             </svg>
-                            <div class="skill-text position-absolute d-flex flex-column justify-content-center align-items-center">
+                            <div
+                                class="skill-text position-absolute d-flex flex-column justify-content-center align-items-center">
                                 <h6 class="text-uppercase">PHP</h6>
                                 <span class="fw-bold">95%</span>
                             </div>
@@ -189,9 +188,133 @@
                                 <circle class="bg" cx="87.5" cy="87.5" r="75"></circle>
                                 <circle class="progress p89" cx="87.5" cy="87.5" r="75"></circle>
                             </svg>
-                            <div class="skill-text position-absolute d-flex flex-column justify-content-center align-items-center">
+                            <div
+                                class="skill-text position-absolute d-flex flex-column justify-content-center align-items-center">
                                 <h6 class="text-uppercase">WordPress</h6>
                                 <span class="fw-bold">89%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio py-5" id="portfolio">
+
+            <div class="section-title d-flex flex-column align-items-center justify-content-center">
+                <h2 class="text-uppercase position-absolute">Portfolio</h2>
+                <h3 class="text-uppercase mt-1">Portfolio</h3>
+            </div>
+            <div class="section-text text-center pt-3">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <nav class="my-4">
+                <div class="nav nav-tabs justify-content-center border-bottom-0" id="nav-tab" role="tablist">
+                    <button class="nav-link active text-uppercase fw-semibold border-0" id="nav-all-tab"
+                        data-bs-toggle="tab" data-bs-target="#nav-all" type="button" role="tab" aria-controls="nav-all"
+                        aria-selected="true">All</button>
+                    <button class="nav-link text-uppercase fw-semibold border-0" id="nav-dev-tab" data-bs-toggle="tab"
+                        data-bs-target="#nav-dev" type="button" role="tab" aria-controls="nav-dev"
+                        aria-selected="false">dev</button>
+                    <button class="nav-link text-uppercase fw-semibold border-0" id="nav-web-tab" data-bs-toggle="tab"
+                        data-bs-target="#nav-web" type="button" role="tab" aria-controls="nav-web"
+                        aria-selected="false">web</button>
+                    <button class="nav-link text-uppercase fw-semibold border-0" id="nav-design-tab" data-bs-toggle="tab"
+                        data-bs-target="#nav-design" type="button" role="tab" aria-controls="nav-design"
+                        aria-selected="false">design</button>
+                </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-all" role="tabpanel" aria-labelledby="nav-all-tab"
+                    tabindex="0">
+                    <div class="container-fluid">
+                        <div class="row g-3 g-md-4">
+                            <div class="col-md-4 col-sm-6">
+                                <div class="portfolio-item">
+                                    <img src="./assets/images/portfolio/creaitive_design.jpg" alt="portfolio1"
+                                        class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="portfolio-item">
+                                    <img src="./assets/images/portfolio/app_design.jpg" alt="portfolio1"
+                                        class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="portfolio-item">
+                                    <img src="./assets/images/portfolio/branding.jpg" alt="portfolio1"
+                                        class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="portfolio-item">
+                                    <img src="./assets/images/portfolio/web.jpg" alt="portfolio1" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="portfolio-item">
+                                    <img src="./assets/images/portfolio/modal.jpg" alt="portfolio1" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="portfolio-item">
+                                    <img src="./assets/images/portfolio/app_develop.jpg" alt="portfolio1"
+                                        class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-dev" role="tabpanel" aria-labelledby="nav-dev-tab" tabindex="0">
+                    <div class="container-fluid">
+                        <div class="row g-3 g-md-4">
+                            <div class="col-md-4 col-sm-6">
+                                <div class="portfolio-item">
+                                    <img src="./assets/images/portfolio/web.jpg" alt="portfolio1" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-web" role="tabpanel" aria-labelledby="nav-web-tab" tabindex="0">
+                    <div class="container-fluid">
+                        <div class="row g-3 g-md-4">
+                            <div class="col-md-4 col-sm-6">
+                                <div class="portfolio-item">
+                                    <img src="./assets/images/portfolio/app_develop.jpg" alt="portfolio1"
+                                        class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-design" role="tabpanel" aria-labelledby="nav-design-tab"
+                    tabindex="0">
+                    <div class="container-fluid">
+                        <div class="row g-3 g-md-4">
+                            <div class="col-md-4 col-sm-6">
+                                <div class="portfolio-item">
+                                    <img src="./assets/images/portfolio/creaitive_design.jpg" alt="portfolio1"
+                                        class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="portfolio-item">
+                                    <img src="./assets/images/portfolio/app_design.jpg" alt="portfolio1"
+                                        class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="portfolio-item">
+                                    <img src="./assets/images/portfolio/branding.jpg" alt="portfolio1"
+                                        class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="portfolio-item">
+                                    <img src="./assets/images/portfolio/modal.jpg" alt="portfolio1" class="img-fluid">
+                                </div>
                             </div>
                         </div>
                     </div>
