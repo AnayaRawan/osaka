@@ -170,3 +170,8 @@ circle {
 .portfolio-item img {
   transition: ease 0.3s ease;
 }
+
+/* Footer Styles */
+footer p{
+  font-size: 12px;
+}
