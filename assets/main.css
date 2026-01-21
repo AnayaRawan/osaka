@@ -79,13 +79,13 @@ body {
 /* skills section styles */
 .skills {
   padding: 6rem 0;
-  background-color: black;
-  color: white;
 }
-.skills h2 {
+.skills h2,
+.contact h2 {
   color: #222;
 }
-.skills .section-text p {
+.skills .section-text p,
+.contact .section-text p {
   color: #aaa;
 }
 .skill-circle {
@@ -171,7 +171,35 @@ circle {
   transition: ease 0.3s ease;
 }
 
+/* contact section styles */
+.contact {
+  padding: 6rem 0;
+}
+.contact .section-text p {
+  color: #aaa;
+}
+.contact .form-control {
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid #888;
+  transition: all 0.35s ease-in-out;
+}
+.contact .form-control:focus {
+  box-shadow: none;
+  border-color: var(--primary_color);
+}
+.contact .form-control::placeholder {
+  color: #888;
+}
+.contact .btn-success {
+  border-radius: 0;
+  transition: all 0.35s ease-in-out;
+}
+.contact .btn-success:hover,
+.contact .btn-success:focus {
+  background-color: var(--primary_color) !important;
+}
 /* Footer Styles */
-footer p{
+footer p {
   font-size: 12px;
 }
